@@ -1,6 +1,8 @@
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
+import { GiSewingNeedle } from "react-icons/gi";  // Needle icon
+
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -19,8 +21,10 @@ const Header = () => {
             alt="Logo"
             className="w-10 h-10"
           />
-          <Link to="/home" className="text-2xl font-bold">
-            Karioca Upcycle
+          <Link to="/home" className="text-4xl font-signature text-white relative">  {/* Increased font size */}
+            Karioca  Upcycle
+            {/* Needle Icon Below Text */}
+            <GiSewingNeedle className="absolute text-2xl text-white bottom-0 left-1/2 transform -translate-x-1/2 -translate-y-1" />
           </Link>
         </div>
 

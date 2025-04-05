@@ -1,7 +1,6 @@
 // pages/About.jsx
 import Layout from "../components/Layout";
 
-
 const About = () => (
   <Layout>
     <section className="max-w-7xl mx-auto py-16 px-6 flex flex-col md:flex-row items-center justify-between space-y-12 md:space-y-0">

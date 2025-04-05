@@ -10,43 +10,52 @@ const servicesData = [
     title: "Sustainable Fashion",
     description: "Learn how to create fashion pieces with sustainable materials.",
     icon: "♻️", // You can replace with any icon or image
+    link: "/services/sustainable-fashion",
   },
   {
     title: "Upcycle Workshops",
     description: "Join our upcycling workshops and create unique items.",
-    icon:  <GiSewingString /> // You can replace with any icon or image
+    icon:  <GiSewingString /> ,// You can replace with any icon or image
+    link: "/services/upcycle-workshops",
   },
   {
     title: "Eco Consulting",
     description: "Get advice on making your business more sustainable.",
-    icon: "🌿", // You can replace with any icon or image
+    icon: "🌿", 
+    link: "/services/eco-consulting",// You can replace with any icon or image
   },
   // New cards for "My Courses", "News", "YouTube Channel"
   {
     title: "My Courses",
     description: "Explore our upcycling and sustainability courses to learn hands-on skills.",
-    icon: "🎓", // Icon for courses
+    icon: "🎓", 
+    link: "/services/courses",// Icon for courses
   },
   {
     title: "News",
     description: "Stay updated with the latest news on upcycling and sustainability trends.",
-    icon: <FaNewspaper className="text-4xl text-green-700" />, // Icon for news
+    icon: <FaNewspaper className="text-4xl text-green-700" />,
+    link: "/services/news", // Icon for news
   },
   {
     title: "YouTube Channel",
     description: "Watch our tutorials and videos on how to create upcycled fashion.",
-    icon: <FaYoutube className="text-4xl text-red-600" />,  // Icon for YouTube channel
+    icon: <FaYoutube className="text-4xl text-red-600" />, 
+    link: "/services/youtube", // Icon for YouTube channel
   },
   // Two extra placeholder cards for future changes
   {
-    title: "New Service 1",
-    description: "Placeholder description for the new service.",
-    icon: <GiSewingMachine />, // Placeholder icon
+    title: "Products",
+    description: "Exlusive collection of upcycled fashion and sustainable accessories.",
+    icon: <GiSewingMachine />,
+    link: "/services/Products",
+     // Placeholder icon
   },
   {
     title: "New Service 2",
     description: "Placeholder description for the second new service.",
-    icon: "💡", // Placeholder icon
+    icon: "💡",
+    link: "/services/new-service-2", // Placeholder icon
   },
 ];
 
