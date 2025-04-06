@@ -4,7 +4,7 @@ import LandingPage from "./pages/LandingPage";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Services from "./pages/Services";
-import UpcycleWorkshops from './pages/UpcycleWorkshops';
+import Workshops from "./pages/Workshops";
 import Contact from "./pages/Contact";
 
 
@@ -19,7 +19,7 @@ export default function App() {
         <Route path="/home" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/services" element={<Services />} />
-        <Route path="/upcycle-workshops" element={<UpcycleWorkshops />} />
+        <Route path="/services/workshops" element={<Workshops />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
     </Router>
