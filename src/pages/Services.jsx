@@ -41,15 +41,14 @@ const servicesData = [
     title: "YouTube Channel",
     description: "Watch our tutorials and videos on how to create upcycled fashion.",
     icon: <FaYoutube className="text-4xl text-red-600" />,
-    link: "/services/youtube", // Icon for YouTube channel
+    link: "https://www.youtube.com/@linyaraujo8177", // Update with your YouTube channel URL
+    isExternal: true // Added flag to identify external link
   },
-  // Two extra placeholder cards for future changes
   {
     title: "Products",
     description: "Exclusive collection of upcycled fashion and sustainable accessories.",
     icon: <GiSewingMachine />,
     link: "/services/Products",
-     // Placeholder icon
   },
   {
     title: "New Service 2",
@@ -66,25 +65,35 @@ const Services = () => {
         <h2 className="text-4xl font-bold text-center text-green-700 mb-8">Our Services</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {servicesData.map((service, index) => (
-            <Link
-              key={index}
-              to={service.link} // Link to the corresponding service page
-              className="service-card transform transition-all duration-300 hover:scale-105 hover:shadow-2xl p-6 bg-white rounded-lg shadow-lg hover:bg-green-100"
-            >
-              <div className="icon text-4xl text-green-700 mb-4">
-                {/* Icon switch for YouTube and Newspaper */}
-                {service.icon === "📺" ? (
-                  <img src="https://img.icons8.com/ios/50/000000/youtube.png" alt="YouTube" className="w-25 h-25"/>
-                ) : service.icon === "📰" ? (
-                  <img src="https://img.icons8.com/ios/50/000000/news.png" alt="Newspaper" className="w-12 h-12"/>
-                ) : (
-                  service.icon
-                )}
-              </div>
+            service.isExternal ? (
+              <a
+                key={index}
+                href={service.link}
+                target="_blank" // Opens in a new tab
+                rel="noopener noreferrer" // Security reason for opening in a new tab
+                className="service-card transform transition-all duration-300 hover:scale-105 hover:shadow-2xl p-6 bg-white rounded-lg shadow-lg hover:bg-green-100"
+              >
+                <div className="icon text-4xl text-green-700 mb-4">
+                  {service.icon}
+                </div>
 
-              <h3 className="text-2xl font-semibold text-gray-800">{service.title}</h3>
-              <p className="text-gray-600 mt-2">{service.description}</p>
-            </Link>
+                <h3 className="text-2xl font-semibold text-gray-800">{service.title}</h3>
+                <p className="text-gray-600 mt-2">{service.description}</p>
+              </a>
+            ) : (
+              <Link
+                key={index}
+                to={service.link} // Internal link handling
+                className="service-card transform transition-all duration-300 hover:scale-105 hover:shadow-2xl p-6 bg-white rounded-lg shadow-lg hover:bg-green-100"
+              >
+                <div className="icon text-4xl text-green-700 mb-4">
+                  {service.icon}
+                </div>
+
+                <h3 className="text-2xl font-semibold text-gray-800">{service.title}</h3>
+                <p className="text-gray-600 mt-2">{service.description}</p>
+              </Link>
+            )
           ))}
         </div>
       </div>
