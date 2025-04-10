@@ -1,0 +1,35 @@
+/* src/components/Ticker.css */
+
+.ticker-container {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  background-color: #28a745;
+  white-space: nowrap;
+}
+
+.ticker-move {
+  display: inline-block;
+  padding-left: 100%;
+  animation: scroll-left 25s linear infinite;
+}
+
+.ticker-text {
+  display: inline-block;
+  font-size: 1rem;
+  padding-right: 2rem; /* Adds space between repeat loops */
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+@media (max-width: 640px) {
+  .ticker-text {
+    font-size: 0.875rem; /* Make text smaller on mobile */
+  }
+}

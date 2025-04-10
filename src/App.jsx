@@ -6,6 +6,8 @@ import About from "./pages/About";
 import Services from "./pages/Services";
 import Workshops from "./pages/Workshops";
 import Contact from "./pages/Contact";
+import Contact1 from "./pages/Contact1";
+
 
 
 import 'animate.css';
@@ -21,6 +23,8 @@ export default function App() {
         <Route path="/services" element={<Services />} />
         <Route path="/services/workshops" element={<Workshops />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/contact1" element={<Contact1 />} />
+        {/* Add more routes as needed */}
       </Routes>
     </Router>
   );

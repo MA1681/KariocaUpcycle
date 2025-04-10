@@ -36,3 +36,21 @@
     transform: rotate(360deg);
   }
 }
+@keyframes needle-stitch {
+  0% {
+    transform: rotate(0deg) translateY(0);
+  }
+  25% {
+    transform: rotate(-10deg) translateY(-3px);
+  }
+  50% {
+    transform: rotate(10deg) translateY(3px);
+  }
+  100% {
+    transform: rotate(0deg) translateY(0);
+  }
+}
+
+.animate-needle-stitch {
+  animation: needle-stitch 0.4s ease-in-out infinite;
+}
