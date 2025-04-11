@@ -1,9 +1,10 @@
+// NeedleAndThread.jsx
 import React from 'react';
-import './App.css';  // Ensure you're importing App.css in this component or globally
+import './App.css'; // Keep this, but we'll enhance it below
 
 const NeedleAndThread = () => {
   return (
-    <div className="needle-thread">
+    <div className="needle-thread-container">
       <div className="needle"></div>
       <div className="thread"></div>
       <div className="needle-thread-text">

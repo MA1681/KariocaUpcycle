@@ -51,6 +51,68 @@
   }
 }
 
-.animate-needle-stitch {
-  animation: needle-stitch 0.4s ease-in-out infinite;
+/* App.css */
+
+.needle-thread-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  max-width: 100%;
+  box-sizing: border-box;
 }
+
+.needle {
+  width: 40px;
+  height: 6px;
+  background-color: #4a5568;
+  border-radius: 3px;
+  margin-bottom: 0.5rem;
+}
+
+.thread {
+  width: 2px;
+  height: 60px;
+  background-color: #38a169;
+  margin-bottom: 1rem;
+}
+
+.needle-thread-text {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #1a202c;
+  text-align: center;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+  .needle-thread-text {
+    font-size: 1.25rem;
+  }
+
+  .needle {
+    width: 30px;
+    height: 5px;
+  }
+
+  .thread {
+    height: 50px;
+  }
+}
+
+@media (max-width: 400px) {
+  .needle-thread-text {
+    font-size: 1rem;
+  }
+
+  .needle {
+    width: 24px;
+    height: 4px;
+  }
+
+  .thread {
+    height: 40px;
+  }
+}
+
