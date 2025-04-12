@@ -1,11 +1,11 @@
 import React, { useState } from "react";
-import { useLocation } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom"; // Import useNavigate
 import Layout from "../components/Layout";
 import "animate.css";
 
-
 const Contact = () => {
   const location = useLocation();
+  const navigate = useNavigate(); // Initialize navigate function
   const workshopType = location.state?.workshop || "Workshop";
 
   const [formData, setFormData] = useState({
@@ -118,6 +118,16 @@ const Contact = () => {
             Submit
           </button>
         </form>
+
+        {/* Back Button */}
+        <div className="mt-6 text-center">
+          <button
+            onClick={() => navigate(-1)} // Go back to the previous page
+            className="text-green-700 hover:text-green-600 py-2 px-4 border border-green-700 rounded"
+          >
+            Back
+          </button>
+        </div>
       </div>
     </Layout>
   );

@@ -16,9 +16,9 @@ const courses = [
   },
   {
     title: "Old Shirt to Trendy Top",
-    link: "https://www.youtube.com/watch?v=kPv5A1U3aqA",
-    preview: "https://www.youtube.com/watch?v=kPv5A1U3aqA",
-    video: "https://your-website.com/preview-video/old-shirt-to-trendy-top.mp4" // Replace with actual .mp4 video URL
+    link: "https://www.youtube.com/watch?v=Wwji8EpKO8s",
+    preview: "https://www.youtube.com/watch?v=Wwji8EpKO8s",
+    video: "https://www.youtube.com/watch?v=Wwji8EpKO8s" // Replace with actual .mp4 video URL
   },
   {
     title: "Upcycled Fashion Tips",
