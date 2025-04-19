@@ -50,7 +50,7 @@ const Contact = () => {
   return (
     <Layout>
       <section className="max-w-xl mx-auto">
-        <h2 className="text-4xl font-bold text-green-800 mb-4 text-center">Contact Us</h2>
+        <h2 className="text-4xl font-bold text-blue-900 mb-4 text-center">Contact Us</h2>
         
         {/* Contact Form */}
         <form
@@ -85,7 +85,7 @@ const Contact = () => {
           ></textarea>
           <button
             type="submit"
-            className="bg-green-700 text-white px-6 py-3 rounded-lg hover:bg-green-800 transition"
+            className="bg-blue-900 text-white px-6 py-3 rounded-lg hover:bg-blue-900 transition"
           >
             Send Message
           </button>
@@ -101,7 +101,7 @@ const Contact = () => {
           {/* Phone contact */}
           <div className="mb-4">
             <p className="text-lg">
-              📞 Call us: <a href="tel:+351912202005" className="text-green-700 hover:text-green-800">+351912202005</a>
+              📞 Call us: <a href="tel:+351912202005" className="text-blue-900 hover:text-blue-900">+351912202005</a>
             </p>
           </div>
 
@@ -109,7 +109,7 @@ const Contact = () => {
           <div className="mb-4">
             <p className="text-lg flex items-center justify-center">
               <FaWhatsapp className="mr-2 text-2xl text-green-700" />
-              <a href="https://wa.me/+351912202005" className="text-green-700 hover:text-green-800" target="_blank" rel="noopener noreferrer">
+              <a href="https://wa.me/+351912202005" className="text-blue-900 hover:text-green-800" target="_blank" rel="noopener noreferrer">
                 Chat with us on WhatsApp
               </a>
             </p>
@@ -119,7 +119,7 @@ const Contact = () => {
           <div className="mb-4">
             <p className="text-lg flex items-center justify-center">
               <FaInstagram className="mr-2 text-2xl text-purple-600" />
-              <a href="https://instagram.com/michelamiri" className="text-green-700 hover:text-green-800" target="_blank" rel="noopener noreferrer">
+              <a href="https://instagram.com/michelamiri" className="text-blue-900 hover:text-blue-900" target="_blank" rel="noopener noreferrer">
                 Follow us on Instagram
               </a>
             </p>

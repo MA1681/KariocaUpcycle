@@ -1,6 +1,6 @@
 import React from 'react';
 import Slider from 'react-slick';
-import Ticker from '../components/Ticker'; // Import the Ticker component
+import Ticker from '../components/Ticker';
 import Layout from "../components/Layout";
 
 // Add the slick carousel styles
@@ -27,22 +27,19 @@ const Home = () => {
 
   return (
     <Layout>
-      {/* Add the Ticker at the top of the page */}
+      {/* Ticker at the top of the page */}
       <Ticker />
 
-      {/* Existing Hero Section */}
+      {/* Hero Section */}
       <section className="text-center max-w-4xl mx-auto px-6 py-16 space-y-6">
-        {/* Updated heading with responsive font size */}
-        <h2 className="text-4xl sm:text-3xl md:text-2xl lg:text-4xl font-bold text-green-800">
+        <h2 className="text-4xl sm:text-3xl md:text-2xl lg:text-4xl font-bold text-blue-900">
           Revive, Reuse, Reimagine
         </h2>
 
-        {/* Updated paragraph with responsive font size */}
-        <p className="text-xl sm:text-lg md:text-base lg:text-xl text-gray-700 leading-relaxed">
+        <p className="text-xl sm:text-lg md:text-base lg:text-xl text-blue-900 leading-relaxed">
           Join us in transforming waste into beautiful, functional items. Sustainability starts with a choice — choose upcycling!
         </p>
         
-        {/* New Section with Two Stylish Images in a Row */}
         <div className="flex flex-wrap justify-between gap-6 mt-6">
           <div className="flex-1 rounded-2xl shadow-lg overflow-hidden relative group">
             <img
@@ -62,14 +59,12 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Space for Future Photos */}
+      {/* Products Section */}
       <section className="photo-placeholder py-20 px-6 md:px-12 bg-gray-100">
-        {/* Updated heading with responsive font size */}
-        <h2 className="text-4xl sm:text-3xl md:text-2xl lg:text-4xl font-bold text-center text-green-700 mb-12">
+        <h2 className="text-4xl sm:text-3xl md:text-2xl lg:text-4xl font-bold text-center text-blue-900 mb-12">
           Our Beautiful Products
         </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
-          {/* Updated Images with Smooth Zoom Effect */}
           <div className="image-container bg-white h-64 flex justify-center items-center rounded-xl shadow-lg border border-gray-300 relative overflow-hidden group">
             <img
               src="https://media.istockphoto.com/id/1316029561/pt/foto/old-jeans-upcycling-idea-crafting-with-denim-recycling-old-clothers-hobby-diy-activity.jpg?s=2048x2048&w=is&k=20&c=AXOd-T6UfzrZE_9TmFT7vunhPGkdBFVxBizUN91eVRE="
@@ -94,10 +89,9 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Active Carousel Section with Upcycling Photos */}
+      {/* Carousel Section */}
       <section className="carousel-placeholder py-20 px-6 md:px-12 bg-white">
-        {/* Updated heading with responsive font size */}
-        <h2 className="text-4xl sm:text-3xl md:text-2xl lg:text-4xl font-bold text-center text-green-700 mb-12">
+        <h2 className="text-4xl sm:text-3xl md:text-2xl lg:text-4xl font-bold text-center text-blue-900 mb-12">
           Upcycle Projects
         </h2>
         <Slider {...settings}>
@@ -109,9 +103,9 @@ const Home = () => {
                 className="w-full object-cover rounded-xl"
                 style={{
                   objectFit: "cover",
-                  maxHeight: "500px", // Limit height for large screens
-                  minHeight: "300px", // Min height for smaller screens
-                  height: "auto", // Allow the image to scale naturally on all screens
+                  maxHeight: "500px",
+                  minHeight: "300px",
+                  height: "auto",
                 }}
               />
             </div>

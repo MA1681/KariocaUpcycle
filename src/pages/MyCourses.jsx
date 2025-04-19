@@ -43,8 +43,8 @@ const courses = [
 const MyCourses = () => {
   return (
     <Layout>
-      <div className="py-12 px-6 md:px-12 bg-green-50 min-h-screen">
-        <h1 className="text-4xl font-bold text-center text-green-800 mb-12">
+      <div className="py-12 px-6 md:px-12 bg-blue-50 min-h-screen">
+        <h1 className="text-4xl font-bold text-center text-blue-900 mb-12">
           My Upcycling Courses
         </h1>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -71,7 +71,7 @@ const MyCourses = () => {
                 className="w-full h-60 object-cover absolute top-0 left-0 opacity-0 group-hover:opacity-100 transition-all duration-500 ease-in-out"
               />
               {/* Title Overlay */}
-              <div className="absolute bottom-0 w-full bg-gradient-to-t from-green-800/80 to-transparent p-4 text-white text-lg font-semibold group-hover:bg-green-900/90 transition-colors duration-300 z-10">
+              <div className="absolute bottom-0 w-full bg-gradient-to-t from-blue-900/80 to-transparent p-4 text-white text-lg font-semibold group-hover:bg-blue-900/90 transition-colors duration-300 z-10">
                 <h2 className="text-lg font-semibold">{course.title}</h2>
               </div>
               {/* Hover Shadow Effect */}

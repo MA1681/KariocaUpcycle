@@ -4,7 +4,7 @@
   width: 100%;
   overflow: hidden;
   position: relative;
-  background-color: #28a745;
+  background-color: #065a8a;
   white-space: nowrap;
 }
 
@@ -17,7 +17,7 @@
 .ticker-text {
   display: inline-block;
   font-size: 1rem;
-  padding-right: 2rem; /* Adds space between repeat loops */
+  padding-right: 1rem; /* Adds space between repeat loops */
 }
 
 @keyframes scroll-left {

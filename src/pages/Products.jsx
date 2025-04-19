@@ -58,7 +58,7 @@ const Product = () => {
   return (
     <Layout>
       <div className="py-16 px-6 md:px-12 bg-gray-50">
-        <h2 className="text-5xl font-semibold text-center text-green-700 mb-12">Our Products</h2>
+        <h2 className="text-5xl font-semibold text-center text-blue-900 mb-12">Our Products</h2>
 
         {/* Product Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10">
@@ -69,7 +69,7 @@ const Product = () => {
             >
               {/* Badge */}
               {product.label && (
-                <div className="absolute top-4 left-4 bg-green-700 text-white text-xs py-1 px-4 rounded-full uppercase shadow-lg">
+                <div className="absolute top-4 left-4 bg-blue-900 text-white text-xs py-1 px-4 rounded-full uppercase shadow-lg">
                   {product.label}
                 </div>
               )}
@@ -85,13 +85,13 @@ const Product = () => {
 
               {/* Product Info */}
               <div className="p-6">
-                <h3 className="text-2xl font-semibold text-gray-800 mb-2">{product.name}</h3>
-                <p className="text-lg text-gray-600 mb-4">{product.price}</p>
+                <h3 className="text-2xl font-semibold text-blue-900 mb-2">{product.name}</h3>
+                <p className="text-lg text-blue-900 mb-4">{product.price}</p>
 
                 {/* View Details Button */}
                 <Link
                   to={`/product/${product.name.toLowerCase().replace(/\s+/g, '-')}`}
-                  className="inline-block text-white bg-green-700 hover:bg-green-800 text-lg font-medium py-2 px-8 rounded-lg transition-colors duration-300"
+                  className="inline-block text-white bg-blue-900 hover:bg-blue-400 text-lg font-medium py-2 px-8 rounded-lg transition-colors duration-300"
                 >
                   View Details
                 </Link>

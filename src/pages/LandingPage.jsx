@@ -35,15 +35,14 @@ const LandingPage = () => {
           <h1 className="text-5xl md:text-6xl text-white font-extrabold leading-tight">
             <Typewriter
               words={[
-                "Welcome to Karioca Upcycling World",
-                "Sustainable. Creative. Unique.",
-                "Transforming the Old into Gold 💚"
+                "Welcome to Karioca Upcycling World 💚",
+                
               ]}
               loop={false}
               cursor
               cursorStyle="_"
               typeSpeed={70}
-              deleteSpeed={50}
+              deleteSpeed={80}
               delaySpeed={1000}
             />
           </h1>

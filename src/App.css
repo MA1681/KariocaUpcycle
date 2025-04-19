@@ -28,28 +28,7 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-@keyframes needle-stitch {
-  0% {
-    transform: rotate(0deg) translateY(0);
-  }
-  25% {
-    transform: rotate(-10deg) translateY(-3px);
-  }
-  50% {
-    transform: rotate(10deg) translateY(3px);
-  }
-  100% {
-    transform: rotate(0deg) translateY(0);
-  }
-}
+
 
 /* App.css */
 
@@ -84,35 +63,3 @@
   color: #1a202c;
   text-align: center;
 }
-
-/* Responsiveness */
-@media (max-width: 768px) {
-  .needle-thread-text {
-    font-size: 1.25rem;
-  }
-
-  .needle {
-    width: 30px;
-    height: 5px;
-  }
-
-  .thread {
-    height: 50px;
-  }
-}
-
-@media (max-width: 400px) {
-  .needle-thread-text {
-    font-size: 1rem;
-  }
-
-  .needle {
-    width: 24px;
-    height: 4px;
-  }
-
-  .thread {
-    height: 40px;
-  }
-}
-
