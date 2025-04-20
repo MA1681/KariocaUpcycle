@@ -58,7 +58,7 @@ const Workshops = () => {
           ].map((workshop, idx) => (
             <div
               key={idx}
-              className="workshop-item bg-white p-8 rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-500 hover:bg-green-50 transform hover:scale-105 flex flex-col justify-between h-full"
+              className="workshop-item bg-white p-8 rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-500 hover:bg-blue-50 transform hover:scale-105 flex flex-col justify-between h-full"
             >
               <div className="relative">
                 <img

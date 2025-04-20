@@ -58,7 +58,7 @@ const Product = () => {
   return (
     <Layout>
       <div className="py-16 px-6 md:px-12 bg-gray-50">
-        <h2 className="text-5xl font-semibold text-center text-blue-900 mb-12">Our Products</h2>
+        <h2 className="text-4xl font-semibold text-center text-blue-900 mb-12">Our Products</h2>
 
         {/* Product Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10">

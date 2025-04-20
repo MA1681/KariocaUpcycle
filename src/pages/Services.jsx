@@ -34,7 +34,7 @@ const Services = () => {
   return (
     <Layout>
       <div className="services-container py-16 px-6 md:px-12">
-        <h2 className="text-5xl font-bold text-center text-blue-900 mb-10">Our Services</h2>
+        <h2 className="text-4xl font-bold text-center text-blue-900 mb-10">Our Services</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
           {servicesData.map((service, index) => (
             service.isExternal ? (
