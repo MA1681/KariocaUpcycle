@@ -2,6 +2,7 @@ import React from 'react';
 import Slider from 'react-slick';
 import Ticker from '../components/Ticker';
 import Layout from "../components/Layout";
+import { motion } from 'framer-motion';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
@@ -32,70 +33,83 @@ const Home = () => {
 
   return (
     <Layout>
-      <div className="overflow-x-hidden">
+      <div className="relative z-10 overflow-x-hidden">
         <Ticker />
 
         {/* Hero Section */}
-        <section className="px-6 py-16 bg-white max-w-[1400px] mx-auto rounded-lg shadow-lg mt-16">
-          <div className="text-center max-w-4xl mx-auto space-y-6">
-            <h2 className="text-2xl sm:text-4xl md:text-4xl lg:text-4xl font-bold text-blue-900">
-              Revive, Reuse, Reimagine
-            </h2>
-            <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl text-blue-900">
+        <section className="w-full py-24 bg-white bg-opacity-60 rounded-none shadow-md mt-20">
+          <div className="text-center max-w-7xl mx-auto px-4 sm:px-8 space-y-8">
+            <h2 className="text-5xl font-playfair text-blue-900 font-semibold">Revive, Reuse, Reimagine</h2>
+            <p className="text-xl font-poppins text-blue-800 max-w-3xl mx-auto">
               Join us in transforming waste into beautiful, functional items. Sustainability starts with a choice — choose upcycling!
             </p>
-          </div>
-
-          {/* Two Wide Images with Spacing */}
-          <div className="flex flex-col lg:flex-row justify-between gap-8 mt-12">
-            {[
-              "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrSMpIr4FYHsKGc-S2bgqhq0qQCUCel0kOtg&s",
-              "https://fashinnovation.nyc/wp-content/uploads/2023/11/Upcycled-Denim-961x1024.png"
-            ].map((img, i) => (
-              <div key={i} className="w-full lg:w-1/2 h-[50vh] rounded-2xl overflow-hidden shadow-xl group relative">
-                <img
-                  src={img}
-                  onError={handleImgError}
-                  alt={`Upcycle ${i}`}
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                />
-              </div>
-            ))}
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 mt-20">
+              {[
+                "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrSMpIr4FYHsKGc-S2bgqhq0qQCUCel0kOtg&s", 
+                "https://fashinnovation.nyc/wp-content/uploads/2023/11/Upcycled-Denim-961x1024.png",
+                "https://i.etsystatic.com/6399006/r/il/1af316/1242694717/il_570xN.1242694717_tutv.jpg"
+              ].map((img, i) => (
+                <div key={i} className="h-[40vh] lg:h-[50vh] rounded-xl overflow-hidden shadow-xl group">
+                  <img
+                    src={img}
+                    onError={handleImgError}
+                    alt={`Upcycle ${i}`}
+                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                  />
+                </div>
+              ))}
+            </div>
           </div>
         </section>
 
         {/* Products Section */}
-        <section className="bg-white px-6 md:px-12 py-20 max-w-[1400px] mx-auto rounded-lg shadow-lg mt-16">
-          <h2 className="text-2xl sm:text-4xl md:text-4xl lg:text-4xl font-bold text-center text-blue-900 mb-12">
-            Our Beautiful Products
-          </h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12">
-            {[
-              "https://www.camelactive.com/media/88/11/12/1689074387/camelactive-blog-denim-box-upcycling-04.webp",
-              "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQX8T6vk5ilQJfXYSTSwooETp7bLeFGTsWZ7A&s",
-              "https://www.heatherhandmade.com/wp-content/uploads/2020/04/upcycle-jeans-tote-bag-22.jpg"
-            ].map((img, i) => (
-              <div key={i} className="bg-white h-[50vh] rounded-xl shadow-xl border border-gray-300 overflow-hidden group">
-                <img
-                  src={img}
-                  onError={handleImgError}
-                  alt={`Product ${i}`}
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                />
-              </div>
-            ))}
+        <motion.section
+          className="w-full py-24 bg-white bg-opacity-60 shadow-md mt-24"
+          initial={{ opacity: 0, scale: 0.9 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.8, type: "spring", stiffness: 100 }}
+          viewport={{ once: false, amount: 0.3 }}
+        >
+          <div className="max-w-7xl mx-auto px-4 sm:px-8">
+            <h2 className="text-5xl font-playfair text-center text-blue-900 mb-20">Our Beautiful Products</h2>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-16">
+              {[
+                "https://www.camelactive.com/media/88/11/12/1689074387/camelactive-blog-denim-box-upcycling-04.webp",
+                "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQX8T6vk5ilQJfXYSTSwooETp7bLeFGTsWZ7A&s",
+                "https://www.heatherhandmade.com/wp-content/uploads/2020/04/upcycle-jeans-tote-bag-22.jpg"
+              ].map((img, i) => (
+                <motion.div
+                  key={i}
+                  className="h-[40vh] lg:h-[50vh] bg-white rounded-xl shadow-xl border border-gray-200 overflow-hidden group"
+                  initial={{ opacity: 0, scale: 0.9, rotate: -20 }}
+                  whileInView={{ opacity: 1, scale: 1, rotate: 0 }}
+                  transition={{
+                    duration: 0.8,
+                    delay: i * 0.3,
+                    type: "spring",
+                    stiffness: 100
+                  }}
+                  viewport={{ once: false }}
+                >
+                  <img
+                    src={img}
+                    onError={handleImgError}
+                    alt={`Product ${i}`}
+                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                  />
+                </motion.div>
+              ))}
+            </div>
           </div>
-        </section>
+        </motion.section>
 
         {/* Carousel Section */}
-        <section className="bg-white px-6 md:px-12 py-20 max-w-[1400px] mx-auto rounded-lg shadow-lg mt-16">
-          <h2 className="text-2xl sm:text-4xl md:text-4xl lg:text-4xl font-bold text-center text-blue-900 mb-12">
-            Upcycle Projects
-          </h2>
-          <div>
+        <section className="w-full py-24 bg-white bg-opacity-60 shadow-md mt-40">
+          <h2 className="text-5xl font-playfair text-center text-blue-900 mb-16">Upcycle Projects</h2>
+          <div className="max-w-6xl mx-auto px-4 sm:px-8">
             <Slider {...settings}>
               {carouselImages.map((image, index) => (
-                <div key={index} className="w-full h-[50vh] lg:h-[70vh] overflow-hidden rounded-xl">
+                <div key={index} className="w-full h-[40vh] lg:h-[50vh] overflow-hidden rounded-xl">
                   <img
                     src={image}
                     onError={handleImgError}

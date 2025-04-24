@@ -11,7 +11,7 @@ const Header = () => {
   };
 
   return (
-    <header className="bg-gradient-to-r from-blue-900 to-sky-600 text-white p-4 shadow-md w-full">
+    <header className="bg-gradient-to-r from-blue-900 to-sky-600 text-white p-4 shadow-md w-full fixed top-0 left-0 z-50">
       <nav className="flex justify-between items-center w-full">
         {/* Left Side: Logo and Title */}
         <div className="flex items-center space-x-3">
@@ -33,7 +33,6 @@ const Header = () => {
           <Link to="/services/Products" className="hover:text-sky-200 transition">Products</Link>
           <Link to="/about" className="hover:text-sky-200 transition">About Us</Link>
           <Link to="/contact" className="hover:text-sky-200 transition">Contact</Link>
-          
         </div>
 
         {/* Hamburger Icon for Mobile */}
@@ -48,7 +47,7 @@ const Header = () => {
           <div className="fixed top-0 left-0 w-full h-full bg-blue-800 bg-opacity-95 text-white flex flex-col items-center justify-center space-y-6 text-xl z-40">
             <Link to="/home" onClick={toggleMenu} className="hover:text-indigo-300">Home</Link>
             <Link to="/services" onClick={toggleMenu} className="hover:text-indigo-300">Services</Link>
-            <Link to="/services/Products" className="hover:text-sky-200 transition">Products</Link>
+            <Link to="/services/Products" onClick={toggleMenu} className="hover:text-sky-200 transition">Products</Link>
             <Link to="/about" onClick={toggleMenu} className="hover:text-indigo-300">About Us</Link>
             <Link to="/contact" onClick={toggleMenu} className="hover:text-indigo-300">Contact</Link>
           </div>

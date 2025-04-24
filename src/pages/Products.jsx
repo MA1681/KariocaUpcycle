@@ -57,7 +57,7 @@ const productData = [
 const Product = () => {
   return (
     <Layout>
-      <div className="py-16 px-6 md:px-12 bg-gray-50">
+      <div className="py-16 px-6 md:px-12 bg-gray-50 mt-24 mb-32">
         <h2 className="text-4xl font-semibold text-center text-blue-900 mb-12">Our Products</h2>
 
         {/* Product Grid */}

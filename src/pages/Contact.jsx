@@ -56,12 +56,12 @@ const Contact = () => {
 
   return (
     <Layout>
-      <section className="max-w-xl mx-auto px-4 py-8">
+      <section className="max-w-3xl mx-auto px-4 py-16">
         <h2 className="text-4xl font-bold text-blue-900 mb-6 text-center">Contact Us</h2>
 
         <form
           onSubmit={handleSubmit}
-          className="space-y-4 bg-white p-8 shadow-2xl rounded-2xl border border-blue-100"
+          className="space-y-6 bg-white p-8 shadow-2xl rounded-2xl border border-blue-100"
         >
           <input
             type="text"
@@ -99,8 +99,8 @@ const Contact = () => {
         </form>
 
         {/* Contact via other methods */}
-        <div className="mt-10 text-center">
-          <h3 className="text-2xl font-semibold text-gray-800 mb-4">Contact Us Via</h3>
+        <div className="mt-12 text-center">
+          <h3 className="text-2xl font-semibold text-blue-900 mb-4">Contact Us Via</h3>
 
           <p className="text-lg mb-3">
             📞 Call us: <a href="tel:+351912202005" className="text-blue-900 hover:underline">+351 912 202 005</a>
