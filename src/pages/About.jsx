@@ -7,7 +7,7 @@ const About = () => (
       
       {/* LEFT - Nossa História */}
       <div className="w-full lg:w-1/2">
-        <div className="bg-white/90 backdrop-blur-md border border-blue-200 shadow-2xl rounded-3xl p-8 md:p-10 lg:p-12">
+        <div className="bg-white/90 backdrop-blur-md border border-blue-200 shadow-2xl rounded-3xl p-8 md:p-10 lg:p-20">
           <h2 className="text-4xl md:text-5xl font-serif text-blue-800 font-bold mb-6 text-center lg:text-left drop-shadow">
             Nossa História
           </h2>

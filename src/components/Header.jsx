@@ -27,7 +27,7 @@ const Header = () => {
         </div>
 
         {/* Right Side: Desktop Menu */}
-        <div className="hidden md:flex space-x-6 text-lg ml-auto">
+        <div className="hidden md:flex space-x-8 text-lg ml-auto">
           <Link to="/home" className="hover:text-sky-200 transition">Home</Link>
           <Link to="/services" className="hover:text-sky-200 transition">Services</Link>
           <Link to="/services/Products" className="hover:text-sky-200 transition">Products</Link>

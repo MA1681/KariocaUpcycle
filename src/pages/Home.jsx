@@ -9,6 +9,8 @@ import 'slick-carousel/slick/slick-theme.css';
 const fallbackImg = "https://via.placeholder.com/1024x600.png?text=Image+Unavailable";
 
 const Home = () => {
+  const backgroundMusic = "https://www.bensound.com/bensound-music/bensound-sunny.mp3";
+
   const carouselImages = [
     "https://shoprestatement.com/wp-content/uploads/2022/06/mending-clothes-how-mend-old-clothes-sustainable-fashion-denim-upcycling-ideas-using-old-jeans_72482-3665.jpeg",
     "https://greensuggest.com/wp-content/uploads/2024/03/upcycling-jeans.webp",
@@ -34,6 +36,13 @@ const Home = () => {
   return (
     <Layout>
       <div className="relative z-10 overflow-x-hidden">
+
+        {/* 🎵 Music Player */}
+        <audio controls loop autoPlay className="fixed bottom-4 right-4 z-50 opacity-80 shadow-lg rounded-lg">
+          <source src={backgroundMusic} type="audio/mp3" />
+          Your browser does not support the audio element.
+        </audio>
+
         <Ticker />
 
         {/* Hero Section */}

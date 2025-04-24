@@ -4,7 +4,7 @@ import Footer from "./Footer";
 const Layout = ({ children }) => (
   <div className="min-h-screen flex flex-col relative">
     <Header />
-    <main className="flex-1 pt-32 px-4 sm:px-8 bg-blue-50 relative z-10">
+    <main className="flex-1 pt-20 px-4 sm:px-8 bg-blue-50 relative z-10">
       {/* Background image with full coverage and no quality loss */}
       <div
         className="absolute inset-0 bg-no-repeat bg-cover bg-center opacity-60"
