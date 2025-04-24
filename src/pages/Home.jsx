@@ -37,7 +37,7 @@ const Home = () => {
         <Ticker />
 
         {/* Hero Section */}
-        <section className="w-full py-24 bg-white bg-opacity-60 rounded-none shadow-md mt-20">
+        <section className="w-full py-24 bg-white bg-opacity-50 rounded-none shadow-md mt-20">
           <div className="text-center max-w-7xl mx-auto px-4 sm:px-8 space-y-8">
             <h2 className="text-5xl font-playfair text-blue-900 font-semibold">Revive, Reuse, Reimagine</h2>
             <p className="text-xl font-poppins text-blue-800 max-w-3xl mx-auto">
@@ -64,7 +64,7 @@ const Home = () => {
 
         {/* Products Section */}
         <motion.section
-          className="w-full py-24 bg-white bg-opacity-60 shadow-md mt-24"
+          className="w-full py-24 bg-white bg-opacity-80 shadow-md mt-24"
           initial={{ opacity: 0, scale: 0.9 }}
           whileInView={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.8, type: "spring", stiffness: 100 }}

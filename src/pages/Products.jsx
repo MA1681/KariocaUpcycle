@@ -57,11 +57,11 @@ const productData = [
 const Product = () => {
   return (
     <Layout>
-      <div className="py-16 px-6 md:px-12 bg-gray-50 mt-24 mb-32">
+      <div className="py-16 px-6 md:px-12 bg-gray-50 mt-24 mb-32 bg-opacity-50">
         <h2 className="text-4xl font-semibold text-center text-blue-900 mb-12">Our Products</h2>
 
         {/* Product Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10 ">
           {productData.map((product, index) => (
             <div
               key={index}
@@ -75,11 +75,11 @@ const Product = () => {
               )}
 
               {/* Image */}
-              <div className="product-image relative">
+              <div className="relative overflow-hidden">
                 <img 
                   src={product.image} 
                   alt={product.name} 
-                  className="w-full h-72 object-cover transform transition-all duration-300 group-hover:scale-110"
+                  className="w-full h-72 object-cover transition-transform duration-500 ease-in-out transform group-hover:scale-110"
                 />
               </div>
 
